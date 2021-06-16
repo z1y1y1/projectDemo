@@ -30,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
   }
 
   private void init() {
+    for (int i = 0; i < 10; i++) {
+
+    }
+//    do {
+//      int num = 10;
+//    } while (true)
 
   }
 }
