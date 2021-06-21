@@ -16,7 +16,9 @@
 
 package com.google.samples.apps.sunflower
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import com.google.samples.apps.sunflower.databinding.ActivityGardenBinding
@@ -25,8 +27,13 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class GardenActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView<ActivityGardenBinding>(this, R.layout.activity_garden)
-    }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView<ActivityGardenBinding>(this, R.layout.activity_garden)
+  }
+
+  fun textOnClick(view: View) {
+    val intent = Intent(this, SunFlowerActivity::class.java)
+    startActivity(intent)
+  }
 }

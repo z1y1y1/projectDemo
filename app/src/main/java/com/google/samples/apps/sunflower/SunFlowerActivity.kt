@@ -14,28 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.demo;
+package com.google.samples.apps.sunflower
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-    init();
-  }
-
-  private void init() {
-    for (int i = 0; i < 10; i++) {
-
-    }
-//    do {
-//      int num = 10;
-//    } while (true)
+class SunFlowerActivity : AppCompatActivity() {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_sun_flower)
 
   }
 }
