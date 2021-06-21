@@ -105,6 +105,9 @@ class PlantDetailFragment : Fragment() {
 
             toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
+                for (index in 1..100 step 2) {
+
+                }
             }
 
             toolbar.setOnMenuItemClickListener { item ->
